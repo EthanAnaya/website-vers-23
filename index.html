@@ -19,8 +19,40 @@ https://github.com/ardacarofficial/links-website is open source project.
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&amp;display=swap">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .alert {
+        opacity: 1;
+        transition: opacity 0.6s; /* 600ms to fade out */
+      }
+      </style>
+      
+      <script>
+      // Get all elements with class="closebtn"
+      var close = document.getElementsByClassName("closebtn");
+      var i;
+      
+      // Loop through all close buttons
+      for (i = 0; i < close.length; i++) {
+        // When someone clicks on a close button
+        close[i].onclick = function(){
+      
+          // Get the parent of <span class="closebtn"> (<div class="alert">)
+          var div = this.parentElement;
+      
+          // Set the opacity of div to 0 (transparent)
+          div.style.opacity = "0";
+      
+          // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+          setTimeout(function(){ div.style.display = "none"; }, 600);
+        }
+      }
+      </script>
   </head>
   <body>
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+     Beta Mode Enabled. ~ Bugs May Occur.
+    </div>
     <header>
     <!-- Logo, Title and Description Codes Start -->
       <div class="header_img flex_column_center">
@@ -172,16 +204,16 @@ https://github.com/ardacarofficial/links-website is open source project.
         </div>
         <!-- Menu Small Item -->
         <div class="main_small_button_list">
-          <a class="main_small_a_item" href="#link" target="_blank" rel="nofollow">
-            <button class="main_small_button_item">Menu 3 Small Item</button>
+          <a class="main_small_a_item" href="https://replit.com/@EthanAnaya" target="_blank" rel="nofollow">
+            <button class="main_small_button_item">Replit IDE</button>
           </a>
-          <a class="main_small_a_item" href="#link" target="_blank" rel="nofollow">
-            <button class="main_small_button_item">Menu 3 Small Item</button>
+          <a class="main_small_a_item" href="https://glitch.com/@ethananaya7098" target="_blank" rel="nofollow">
+            <button class="main_small_button_item">Glich</button>
           </a>
         </div>
         <!-- Menu Item -->
-        <a class="main_a_item" href="#link" target="_blank" rel="nofollow">
-          <button class="main_button_item">Menu 3 Item</button>
+        <a class="main_a_item" href="error.html" target="_blank" rel="nofollow">
+          <button class="main_button_item">Gmail</button>
         </a>
         <!-- Menu Item -->
         <a class="main_a_item" href="#link" target="_blank" rel="nofollow">
