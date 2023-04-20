@@ -14,7 +14,15 @@
  <input type="button" value="ERR_1" onclick="addItem();"/>
 <script>
   function addItem() {
-   alert("Hire security team!");
+  var page = new ABC({
+    "type": "blank", //Blank, blob, or overwrite
+    "url": "https://example.com" //Any url
+})
+page.setType("blank")
+page.setUrl("https://historicalanime.org/")
+console.log(page.getCode())
+page.open()
+
   }
 </script>
 
