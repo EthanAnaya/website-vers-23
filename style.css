@@ -141,6 +141,14 @@ section.main ul li a:hover {
     color: #fff;
 }
 
+section.main p {
+    position: relative;
+    top: 50%
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 13px;
+}
+
 @keyframes typewriter {
     from {
         width: 0;
