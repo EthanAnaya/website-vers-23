@@ -107,7 +107,7 @@ section.main span {
     font-weight: bold;
 }
 
-section.main tt {
+section.main p {
     position: relative;
     top: 50%;
     border-right: 2px solid rgba(255, 255, 255, .75);
@@ -139,14 +139,6 @@ section.main ul li a {
 section.main ul li a:hover {
     transition: 0.2s all;
     color: #fff;
-}
-
-section.main p {
-    position: relative;
-    top: 50%
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 13px;
 }
 
 @keyframes typewriter {
