@@ -24,8 +24,8 @@
 
     #exitButton {
       position: fixed;
-      top: 20px;
-      right: 20px;
+      bottom: 20px;
+      left: 20px;
       background-color: #ffffff;
       color: #000000;
       padding: 10px 20px;
@@ -39,14 +39,7 @@
 <body>
   <div id="iframeContainer">
     <iframe src="https://interstellar-yeb8.onrender.com/"></iframe>
-    <button id="exitButton" onclick="closeIframe()">Exit</button>
+    <a href="ethananaya.github.io/main" target="_blank"><button id="exitButton">Exit</button></a>
   </div>
-
-  <script>
-    function closeIframe() {
-      var iframeContainer = document.getElementById("iframeContainer");
-      iframeContainer.style.display = "none";
-    }
-  </script>
 </body>
 </html>
