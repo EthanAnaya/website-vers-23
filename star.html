@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #iframeContainer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      z-index: 9999;
+    }
+
+    #iframeContainer iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    #exitButton {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #ffffff;
+      color: #000000;
+      padding: 10px 20px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 10000;
+    }
+  </style>
+</head>
+<body>
+  <div id="iframeContainer">
+    <iframe src="https://interstellar-yeb8.onrender.com/"></iframe>
+    <button id="exitButton" onclick="closeIframe()">Exit</button>
+  </div>
+
+  <script>
+    function closeIframe() {
+      var iframeContainer = document.getElementById("iframeContainer");
+      iframeContainer.style.display = "none";
+    }
+  </script>
+</body>
+</html>
